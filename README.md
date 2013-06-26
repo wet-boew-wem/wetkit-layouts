@@ -1,4 +1,6 @@
-wetkit-layouts
-==============
+WetKit Panels
+===============
+Implements accessible and responsive layouts leveraging the WET grid system.
 
-Panels Layouts  Configuration for Drupal WEM.
+Key Features
+* 10 responsive and accessible panel layouts
