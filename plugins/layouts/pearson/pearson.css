@@ -11,3 +11,8 @@
   #panels-dnd-main #wb-main {width: 900px; float: right;}
   #panels-dnd-main .panel-display {width: 1200px;}
 }
+.region-pearson-first .rate-widget-fiveleaf {
+  float: right;
+  margin-right: 10px;
+}
+.region-pearson-second .panel-pane { margin-bottom: 10px; }

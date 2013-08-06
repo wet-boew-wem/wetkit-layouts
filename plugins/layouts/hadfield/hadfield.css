@@ -11,3 +11,6 @@
   #panels-dnd-main #wb-main {width: 900px; float: right;}
   #panels-dnd-main .panel-display {width: 1200px;}
 }
+
+.region-hadfield-first { margin-top: 7px; }
+.region-hadfield-first .panel-pane { margin-bottom: 10px; }
