@@ -68,7 +68,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
           <nav role="navigation">
             <h2 id="wb-side-nav"><?php print t('Secondary Menu'); ?></h2>
             <div class="wb-sec-def">
-              <?php print $content['doohan_third']; ?>
+              <?php print $content['doohan_fourth']; ?>
             </div>
           </nav>
         </div>

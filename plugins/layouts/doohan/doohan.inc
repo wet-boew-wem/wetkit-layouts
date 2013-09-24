@@ -23,7 +23,7 @@ function wetkit_layouts_doohan_panels_layouts() {
       'doohan_second'  => t('Content 2'),
       'doohan_third' => t('Content 3'),
       'doohan_content_footer' => t('Content Footer'),
-      'doohan_third'  => t('Sidebar'),
+      'doohan_fourth'  => t('Sidebar'),
       'doohan_bottom' => t('Bottom (conditional)'),
     ),
     'bodyid' => 'wb-body-sec',
