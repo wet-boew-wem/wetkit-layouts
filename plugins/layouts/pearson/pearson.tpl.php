@@ -50,12 +50,17 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
         <div class="region-inner clearfix">
           <nav role="navigation">
             <h2 id="wb-side-nav"><?php print t('Secondary Menu'); ?></h2>
-            <div class="wb-sec-def">
-              <?php print $content['pearson_second']; ?>
-            </div>
-            <div class="wb-sec-def-other">
-              <?php print $content['pearson_third']; ?>
-            </div>
+            <?php if ($content['pearson_second']): ?>
+              <div class="wb-sec-def">
+                <?php print $content['pearson_second']; ?>
+              </div>
+            <?php endif; ?>
+            <?php if ($content['pearson_third']): ?>
+              <div class="wb-sec-def-other">
+                <?php print $content['pearson_third']; ?>
+              </div>
+            <?php endif; ?>
+
           </nav>
         </div>
       </div>
