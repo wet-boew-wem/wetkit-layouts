@@ -21,7 +21,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
       <?php if ($content['greene_top']): ?>
       <div class="region-greene-top span-8 margin-bottom-none">
         <div class="region-inner clearfix">
-        <?php print $content['greene_top']; ?>
+          <?php print $content['greene_top']; ?>
         </div>
       </div>
       <div class="clear"></div>
@@ -46,7 +46,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
     </div>
     <div class="clear"></div>
     <?php endif; ?>
+    <?php print $panel_suffix; ?>
   </div>
-  <?php print $panel_suffix; ?>
   <div class="clear"></div>
 </div>

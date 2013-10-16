@@ -10,8 +10,8 @@
  */
 function wetkit_layouts_pearson_panels_layouts() {
   $items['pearson'] = array(
-    'title' => t('Pearson (Left Sidebar)'),
-    'category' => t('WetKit Layouts'),
+    'title' => t('Pearson'),
+    'category' => t('Layouts Sidebar'),
     'icon' => 'pearson.png',
     'theme' => 'pearson',
     'admin css' => 'pearson.admin.css',

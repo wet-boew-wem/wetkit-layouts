@@ -11,7 +11,7 @@
 function wetkit_layouts_berton_panels_layouts() {
   $items['berton'] = array(
     'title' => t('Berton'),
-    'category' => t('WetKit Layouts'),
+    'category' => t('Layouts'),
     'icon' => 'berton.png',
     'theme' => 'berton',
     'admin css' => 'berton.admin.css',

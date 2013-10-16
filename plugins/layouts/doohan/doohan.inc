@@ -10,8 +10,8 @@
  */
 function wetkit_layouts_doohan_panels_layouts() {
   $items['doohan'] = array(
-    'title'    => t('Doohan (Left Sidebar)'),
-    'category' => t('WetKit Layouts'),
+    'title'    => t('Doohan'),
+    'category' => t('Layouts Sidebar'),
     'icon'     => 'doohan.png',
     'theme'    => 'doohan',
     'admin css' => 'doohan.admin.css',

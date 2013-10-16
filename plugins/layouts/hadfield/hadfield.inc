@@ -11,7 +11,7 @@
 function wetkit_layouts_hadfield_panels_layouts() {
   $items['hadfield'] = array(
     'title' => t('Hadfield'),
-    'category' => t('WetKit Layouts'),
+    'category' => t('Layouts'),
     'icon' => 'hadfield.png',
     'theme' => 'hadfield',
     'admin css' => 'hadfield.admin.css',

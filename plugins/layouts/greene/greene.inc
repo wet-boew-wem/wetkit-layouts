@@ -10,8 +10,8 @@
  */
 function wetkit_layouts_greene_panels_layouts() {
   $items['greene'] = array(
-    'title' => t('Greene (span 3|5)'),
-    'category' => t('WetKit Layouts'),
+    'title' => t('Greene'),
+    'category' => t('Layouts'),
     'icon' => 'greene.png',
     'theme' => 'greene',
     'admin css' => 'greene.admin.css',

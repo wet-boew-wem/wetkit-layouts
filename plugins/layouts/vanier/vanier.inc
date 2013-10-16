@@ -11,7 +11,7 @@
 function wetkit_layouts_vanier_panels_layouts() {
   $items['vanier'] = array(
     'title' => t('Vanier'),
-    'category' => t('WetKit Layouts'),
+    'category' => t('Layouts'),
     'icon' => 'vanier.png',
     'theme' => 'vanier',
     'admin css' => 'vanier.admin.css',

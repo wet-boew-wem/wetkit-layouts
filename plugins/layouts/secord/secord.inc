@@ -11,7 +11,7 @@
 function wetkit_layouts_secord_panels_layouts() {
   $items['secord'] = array(
     'title'    => t('Secord'),
-    'category' => t('WetKit Layouts'),
+    'category' => t('Layouts'),
     'icon'     => 'secord.png',
     'theme'    => 'secord',
     'admin css' => 'secord.admin.css',

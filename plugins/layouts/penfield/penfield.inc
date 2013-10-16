@@ -10,8 +10,8 @@
  */
 function wetkit_layouts_penfield_panels_layouts() {
   $items['penfield'] = array(
-    'title'    => t('Penfield (Left Sidebar)'),
-    'category' => t('WetKit Layouts'),
+    'title'    => t('Penfield'),
+    'category' => t('Layouts Sidebar'),
     'icon'     => 'penfield.png',
     'theme'    => 'penfield',
     'admin css' => 'penfield.admin.css',

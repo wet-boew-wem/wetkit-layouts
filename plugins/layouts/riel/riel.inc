@@ -11,7 +11,7 @@
 function wetkit_layouts_riel_panels_layouts() {
   $items['riel'] = array(
     'title' => t('Riel'),
-    'category' => t('WetKit Layouts'),
+    'category' => t('Layouts'),
     'icon' => 'riel.png',
     'theme' => 'riel',
     'admin css' => 'riel.admin.css',

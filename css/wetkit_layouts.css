@@ -6,6 +6,10 @@ div.layout-icon .caption {
   padding-left: 10px;
 }
 
+div.ctools-modal-content div.form-item-categories {
+  margin: 2em 8.5em;
+}
+
 div.ctools-modal-content div.form-item-categories label {
   float: left;
   font-weight: normal;
@@ -14,9 +18,10 @@ div.ctools-modal-content div.form-item-categories label {
   width: auto;
 }
 
-#panels-layout-category-WetKit-Layouts-BackEnd-Only,
-#panels-layout-category-WetKit-Layouts,
-#panels-layout-category-WetKit-Menu {
+#panels-layout-category-Layouts-Sidebar,
+#panels-layout-category-Layouts-BackEnd,
+#panels-layout-category-Layouts,
+#panels-layout-category-Layouts-Menu {
   margin: 3% 6%;
 }
 
@@ -29,24 +34,18 @@ div.modal-content-preview-button {
   text-align: center;
 }
 
-#panels-layout-category-WetKit-Layouts-BackEnd-Only-wrapper .layout-link div,
-#panels-layout-category-WetKit-Layouts-wrapper .layout-link div,
-#panels-layout-category-WetKit-Menu-wrapper .layout-link div {
+.panels-choose-layout .layout-link div {
   margin-top: 5px;
 }
 
-#panels-layout-category-WetKit-Layouts-BackEnd-Only-wrapper .panels-layouts-category,
-#panels-layout-category-WetKit-Layouts-wrapper .panels-layouts-category,
-#panels-layout-category-WetKit-Menu-wrapper .panels-layouts-category {
+.panels-choose-layout .panels-layouts-category {
   padding-left: 15px;
   padding-bottom: 20px;
   font-size: 16px;
   text-decoration: underline;
 }
 
-#panels-layout-category-WetKit-Layouts-BackEnd-Only-wrapper .layout-link,
-#panels-layout-category-WetKit-Layouts-wrapper .layout-link,
-#panels-layout-category-WetKit-Menu-wrapper .layout-link {
+.panels-choose-layout .layout-link {
   float: left;
   height: 68px;
   padding: 1.25em;
@@ -55,15 +54,11 @@ div.modal-content-preview-button {
   margin-bottom: 60px
 }
 
-#panels-layout-category-WetKit-Layouts-BackEnd-Only-wrapper .layout-link:hover,
-#panels-layout-category-WetKit-Layouts-wrapper .layout-link:hover,
-#panels-layout-category-WetKit-Menu-wrapper .layout-link:hover {
+.panels-choose-layout .layout-link:hover {
   background-color: #99ccff;
 }
 
-#panels-layout-category-WetKit-Layouts-BackEnd-Only-wrapper .current-layout,
-#panels-layout-category-WetKit-Layouts-wrapper .current-layout,
-#panels-layout-category-WetKit-Menu-wrapper .current-layout {
+.panels-choose-layout .current-layout {
   background-color: #ffffc9;
 }
 
