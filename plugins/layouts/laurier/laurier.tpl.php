@@ -18,14 +18,14 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 <div class="panel-display laurier clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['laurier_top']): ?>
   <div class="region-laurier-top span-8">
-      <?php print $content['laurier_top']; ?>
+    <?php print $content['laurier_top']; ?>
   </div>
   <div class="clear"></div>
   <?php endif; ?>
   <div id="wb-main" role="main">
     <div id="wb-main-in">
       <div class="region-laurier-first">
-          <?php print $content['laurier_content']; ?>
+        <?php print $content['laurier_content']; ?>
       </div>
       <div class="clear"></div>
     </div>

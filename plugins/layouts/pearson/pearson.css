@@ -1,18 +1,14 @@
 /* Desktop view */
 @media screen and (min-width: 768px) and (min-device-width: 768px) {
-  #panels-dnd-main #wb-main {width: 720px; float: right;}
-  #panels-dnd-main .panel-display {width: 960px;}
+  #panels-dnd-main .pearson #wb-main {width: 720px; float: right;}
+  #panels-dnd-main .pearson {width: 960px;}
 }
 @media screen and (min-width: 768px) and (max-width: 959px) and (min-device-width: 768px) {
-  #panels-dnd-main #wb-main {width: 568px; float: right;}
-  #panels-dnd-main .panel-display {width: 768px;}
+  #panels-dnd-main .pearson #wb-main {width: 568px; float: right;}
+  #panels-dnd-main .pearson {width: 768px;}
 }
 @media screen and (min-width: 1200px) and (min-device-width: 768px) {
-  #panels-dnd-main #wb-main {width: 900px; float: right;}
-  #panels-dnd-main .panel-display {width: 1200px;}
-}
-.region-pearson-first .rate-widget-fiveleaf {
-  float: right;
-  margin-right: 10px;
+  #panels-dnd-main .pearson #wb-main {width: 900px; float: right;}
+  #panels-dnd-main .pearson {width: 1200px;}
 }
 .region-pearson-second .panel-pane { margin-bottom: 10px; }

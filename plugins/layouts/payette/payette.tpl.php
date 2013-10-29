@@ -14,10 +14,10 @@
 $panel_prefix = isset($panel_prefix) ? $panel_prefix : '';
 $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
-<div id="wb-main" role="main">
-  <div id="wb-main-in">
-    <?php print $panel_prefix; ?>
-    <div class="panel-display payette clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
+<?php print $panel_prefix; ?>
+<div class="panel-display payette clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
+  <div id="wb-main" role="main">
+    <div id="wb-main-in">
       <div class="grid-12">
         <div class="region-payette-top-left span-8 margin-bottom-none">
           <div class="region-inner clearfix">
@@ -63,7 +63,8 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
         </div>
         <div class="clear"></div>
       </div>
+      <div class="clear"></div>
+    </div>
   </div>
-  <?php print $panel_suffix; ?>
-  <div class="clear"></div>
 </div>
+<?php print $panel_suffix; ?>

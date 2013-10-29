@@ -24,8 +24,8 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
   </div>
   <div class="clear"></div>
   <?php endif; ?>
-<div id="wb-main" role="main">
-  <div id="wb-main-in">
+  <div id="wb-main" role="main">
+    <div id="wb-main-in">
       <div class="span-2 region-hadfield-first">
         <div class="region-inner clearfix">
           <?php print $content['hadfield_first']; ?>
@@ -36,8 +36,8 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
           <?php print $content['hadfield_second']; ?>
         </div>
       </div>
+    </div>
   </div>
-</div>
   <?php if ($content['hadfield_bottom']): ?>
   <div class="region-hadfield-bottom span-8">
     <div class="region-inner clearfix">
