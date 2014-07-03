@@ -16,61 +16,68 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
 <?php print $panel_prefix; ?>
 <div class="panel-display secord clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
-  <div id="wb-main" role="main">
-    <div id="wb-main-in">
-      <div class="grid-12">
-        <div class="region-secord-top-left span-8 margin-bottom-none">
+
+      <div class="row">
+        <?php if ($content['secord_top_left']): ?>
+        <div class="region-secord-top-left col-md-8 ">
           <div class="region-inner clearfix">
             <?php print $content['secord_top_left']; ?>
           </div>
         </div>
-        <div class="span-4">
-          <div class="region-secord-top-right-2 span-4 margin-bottom-none">
+        <?php endif; ?>
+          <?php if ($content['secord_top_right_1']): ?>
+          <div class="region-secord-top-right-2 col-md-4 ">
             <div class="region-inner clearfix">
               <?php print $content['secord_top_right_1']; ?>
             </div>
           </div>
+          <?php endif; ?>
         </div>
-        <div class="clear"></div>
-        <div class="wb-wrapper-content">
-          <div class="equalize">
-            <div class="region-secord-mid-left span-4 margin-bottom-large">
+          <div class="row equalize">
+            <?php if ($content['secord_mid_left']): ?>
+            <div class="region-secord-mid-left col-md-4 ">
               <div class="region-inner clearfix">
                 <?php print $content['secord_mid_left']; ?>
               </div>
             </div>
-            <div class="region-secord-mid-center span-4 margin-bottom-large">
+            <?php endif; ?>
+            <?php if ($content['secord_mid_center']): ?>
+            <div class="region-secord-mid-center col-md-4 ">
               <div class="region-inner clearfix">
                 <?php print $content['secord_mid_center']; ?>
               </div>
             </div>
-            <div class="region-secord-mid-right span-4 margin-bottom-large">
+            <?php endif; ?>
+            <?php if ($content['secord_mid_right']): ?>
+            <div class="region-secord-mid-right col-md-4 ">
               <div class="region-inner clearfix">
                 <?php print $content['secord_mid_right']; ?>
               </div>
             </div>
+            <?php endif; ?>
           </div>
-          <div class="clear"></div>
-          <div class="region-secord-bottom-left span-4 margin-bottom-none">
+          <div class="row">
+            <?php if ($content['secord_bottom_left']): ?>
+          <div class="region-secord-bottom-left col-md-4 ">
             <div class="region-inner clearfix">
               <?php print $content['secord_bottom_left']; ?>
             </div>
           </div>
-          <div class="region-secord-bottom-center span-4 margin-bottom-none">
+          <?php endif; ?>
+          <?php if ($content['secord_bottom_center']): ?>
+          <div class="region-secord-bottom-center col-md-4 ">
             <div class="region-inner clearfix">
               <?php print $content['secord_bottom_center']; ?>
             </div>
           </div>
-          <div class="region-secord-bottom-right span-4 margin-bottom-none">
+          <?php endif; ?>
+          <?php if ($content['secord_bottom_right']): ?>
+          <div class="region-secord-bottom-right col-md-4 ">
             <div class="region-inner clearfix">
               <?php print $content['secord_bottom_right']; ?>
             </div>
           </div>
-          <div class="clear"></div>
+          <?php endif; ?>
         </div>
-      </div>
-    </div>
-    <div class="clear"></div>
-  </div>
 </div>
 <?php print $panel_suffix; ?>

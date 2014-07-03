@@ -16,60 +16,79 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
 <?php print $panel_prefix; ?>
 <div class="panel-display mackenzie clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
-  <div id="wb-main" role="main">
-    <div id="wb-main-in">
-      <div class="region-mackenzie-header span-8 margin-top-small">
+      <?php if ($content['mackenzie_header']): ?>
+      <div class="region-mackenzie-header ">
         <div class="region-inner clearfix">
           <?php print $content['mackenzie_header']; ?>
         </div>
       </div>
-      <div class="span-2 float-right margin-bottom-none">
+      <?php endif; ?>
+      <div class="row">
+        <?php if ($content['mackenzie_header']): ?>
+      <div class="col-md-3 col-md-push-8 ">
         <div class="region-inner clearfix">
           <?php print $content['mackenzie_sidebar_first']; ?>
         </div>
       </div>
-      <div class="span-6 margin-top-none margin-bottom-medium">
-        <div class="span-6 margin-top-none margin-bottom-medium">
+      <?php endif; ?>
+      <div class="col-md-8 col-md-pull-3 margin-top-none margin-bottom-medium">
+        <?php if ($content['mackenzie_banner_top']): ?>
+        <div class="margin-top-none margin-bottom-medium">
           <div class="region-inner clearfix">
             <?php print $content['mackenzie_banner_top']; ?>
           </div>
         </div>
-        <div class="span-6 equalize indent-none">
-          <div class="span-2 row-start">
+        <?php endif; ?>
+        <div class="row equalize indent-none">
+          <?php if ($content['mackenzie_section_first']): ?>
+          <div class="col-md-4 row-start">
             <?php print $content['mackenzie_section_first']; ?>
           </div>
-          <div class="span-2">
+          <?php endif; ?>
+          <?php if ($content['mackenzie_section_second']): ?>
+          <div class="col-md-4">
             <?php print $content['mackenzie_section_second']; ?>
           </div>
-          <div class="span-2 row-end">
+          <?php endif; ?>
+          <?php if ($content['mackenzie_section_third']): ?>
+          <div class="col-md-4 row-end">
             <?php print $content['mackenzie_section_third']; ?>
           </div>
+          <?php endif; ?>
         </div>
-        <div class="span-6 equalize indent-none">
-          <div class="span-2 row-start">
+        <div class="row equalize indent-none">
+          <?php if ($content['mackenzie_section_fourth']): ?>
+          <div class="col-md-4 row-start">
             <?php print $content['mackenzie_section_fourth']; ?>
             </div>
-          <div class="span-2">
+            <?php endif; ?>
+            <?php if ($content['mackenzie_section_fifth']): ?>
+          <div class="col-md-4">
             <?php print $content['mackenzie_section_fifth']; ?>
           </div>
-          <div class="span-2 row-end">
+          <?php endif; ?>
+          <?php if ($content['mackenzie_section_sixth']): ?>
+          <div class="col-md-4 row-end">
             <?php print $content['mackenzie_section_sixth']; ?>
           </div>
+          <?php endif; ?>
         </div>
-        <div class="span-6">
+        <?php if ($content['mackenzie_banner_bottom']): ?>
+        <div>
           <div class="region-inner clearfix">
             <?php print $content['mackenzie_banner_bottom']; ?>
           </div>
         </div>
+        <?php endif; ?>
       </div>
-      <div class="clear"></div>
-      <div class="span-8">
+      </div>
+      <?php if ($content['mackenzie_footer']): ?>
+      <div>
         <div class="region-inner clearfix">
           <?php print $content['mackenzie_footer']; ?>
         </div>
       </div>
-      <div class="clear"></div>
-    </div>
-  </div>
+      <?php endif; ?>
+
 </div>
 <?php print $panel_suffix; ?>

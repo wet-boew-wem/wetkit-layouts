@@ -17,44 +17,44 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 <?php print $panel_prefix; ?>
 <div class="panel-display polley clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['polley_top']): ?>
-  <div class="region-polley-top span-8">
+  <div class="region-polley-top">
     <div class="region-inner clearfix">
       <?php print $content['polley_top']; ?>
     </div>
   </div>
-  <div class="clear"></div>
   <?php endif; ?>
-  <div id="wb-main" role="main">
-    <div id="wb-main-in">
-      <div class="region-polley-top-banner margin-bottom-small">
-        <div class="region-inner clearfix">
-          <?php print $content['polley_top_banner']; ?>
-        </div>
+  <div class="row">
+    <div class="region-polley-top-banner col-md-8">
+      <div class="region-inner clearfix">
+        <?php print $content['polley_top_banner']; ?>
       </div>
-      <div class="span-6 region-polley-spotlight">
-        <div class="region-inner clearfix">
-          <?php print $content['polley_spotlight']; ?>
-        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region-polley-spotlight col-md-6">
+      <div class="region-inner clearfix">
+        <?php print $content['polley_spotlight']; ?>
       </div>
-      <div class="span-2 region-polley-content-listings">
-        <div class="region-inner clearfix">
-          <?php print $content['polley_content_listings']; ?>
-        </div>
+    </div>
+    <div class="region-polley-content-listings col-md-2">
+      <div class="region-inner clearfix">
+        <?php print $content['polley_content_listings']; ?>
       </div>
-      <div class="span-8 region-polley-bottom-banner">
-        <div class="region-inner clearfix">
-          <?php print $content['polley_bottom_banner']; ?>
-        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region-polley-bottom-banner col-md-8">
+      <div class="region-inner clearfix">
+        <?php print $content['polley_bottom_banner']; ?>
       </div>
     </div>
   </div>
   <?php if ($content['polley_bottom']): ?>
-  <div class="region-polley-bottom span-8">
+  <div class="region-polley-bottom">
     <div class="region-inner clearfix">
       <?php print $content['polley_bottom']; ?>
     </div>
   </div>
-  <div class="clear"></div>
   <?php endif; ?>
 </div>
 <?php print $panel_suffix; ?>

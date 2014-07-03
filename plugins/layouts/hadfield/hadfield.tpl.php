@@ -17,34 +17,35 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 <?php print $panel_prefix; ?>
 <div class="panel-display hadfield clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['hadfield_top']): ?>
-  <div class="region-hadfield-top span-8">
+  <div class="region-hadfield-top ">
     <div class="region-inner clearfix">
       <?php print $content['hadfield_top']; ?>
     </div>
   </div>
-  <div class="clear"></div>
   <?php endif; ?>
-  <div id="wb-main" role="main">
-    <div id="wb-main-in">
-      <div class="span-2 region-hadfield-first">
+    <div class="row">
+      <?php if ($content['hadfield_first']): ?>
+      <div class="col-md-4 region-hadfield-first">
         <div class="region-inner clearfix">
           <?php print $content['hadfield_first']; ?>
         </div>
       </div>
-      <div class="span-6 region-hadfield-second">
+      <?php endif; ?>
+      <?php if ($content['hadfield_second']): ?>
+      <div class="col-md-8 region-hadfield-second">
         <div class="region-inner clearfix">
           <?php print $content['hadfield_second']; ?>
         </div>
       </div>
-    </div>
-  </div>
+      <?php endif; ?>
+      </div>
+
   <?php if ($content['hadfield_bottom']): ?>
-  <div class="region-hadfield-bottom span-8">
+  <div class="region-hadfield-bottom ">
     <div class="region-inner clearfix">
       <?php print $content['hadfield_bottom']; ?>
     </div>
   </div>
-  <div class="clear"></div>
   <?php endif; ?>
 </div>
 <?php print $panel_suffix; ?>

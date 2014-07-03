@@ -17,39 +17,45 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 <?php print $panel_prefix; ?>
 <div class="panel-display vanier clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['vanier_top']): ?>
-  <div class="region-vanier-top span-8">
+  <div class="region-vanier-top">
       <?php print $content['vanier_top']; ?>
   </div>
-  <div class="clear"></div>
   <?php endif; ?>
-  <div id="wb-main" role="main">
-    <div id="wb-main-in">
-      <div class="grid-12">
-        <div class="region-vanier-content-banner span-8">
+
+      <div class="row">
+        <?php if ($content['vanier_content_banner']): ?>
+        <div class="region-vanier-content-banner col-md-8">
             <?php print $content['vanier_content_banner']; ?>
         </div>
-        <div class="region-vanier-content-listings span-4">
+        <?php endif; ?>
+        <?php if ($content['vanier_content_listings']): ?>
+        <div class="region-vanier-content-listings col-md-4">
             <?php print $content['vanier_content_listings']; ?>
         </div>
-        <div class="clear"></div>
-        <div class="region-vanier-spotlight-1 span-4">
+        <?php endif; ?>
+      </div>
+      <div class="row">
+        <?php if ($content['vanier_spotlight_1']): ?>
+        <div class="region-vanier-spotlight-1 col-md-4">
             <?php print $content['vanier_spotlight_1']; ?>
         </div>
-        <div class="region-vanier-spotlight-2 span-4">
+        <?php endif; ?>
+        <?php if ($content['vanier_spotlight_2']): ?>
+        <div class="region-vanier-spotlight-2 col-md-4">
             <?php print $content['vanier_spotlight_2']; ?>
         </div>
-        <div class="region-vanier-spotlight-3 span-4">
+        <?php endif; ?>
+        <?php if ($content['vanier_spotlight_3']): ?>
+        <div class="region-vanier-spotlight-3 col-md-4">
             <?php print $content['vanier_spotlight_3']; ?>
         </div>
-        <div class="clear"></div>
+        <?php endif; ?>
       </div>
-    </div>
-  </div>
+
   <?php if ($content['vanier_bottom']): ?>
-  <div class="region-vanier-bottom span-8">
+  <div class="region-vanier-bottom">
       <?php print $content['vanier_bottom']; ?>
   </div>
-  <div class="clear"></div>
   <?php endif; ?>
 </div>
 <?php print $panel_suffix; ?>

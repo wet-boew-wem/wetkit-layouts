@@ -1,14 +1,10 @@
 /* Desktop view */
-@media screen and (min-width: 768px) and (min-device-width: 768px) {
-  #panels-dnd-main .pearson #wb-main {width: 720px; float: right;}
-  #panels-dnd-main .pearson {width: 960px;}
+.panels-ipe-editing .region-pearson-second #wb-sec {
+ margin-top: 0px;
 }
-@media screen and (min-width: 768px) and (max-width: 959px) and (min-device-width: 768px) {
-  #panels-dnd-main .pearson #wb-main {width: 568px; float: right;}
-  #panels-dnd-main .pearson {width: 768px;}
+
+.panels-ipe-editing .region-pearson-second #wb-sec .panels-ipe-placeholder-content h3 {
+ border: none;
+ padding: 0px;
+ padding-left: 5px;
 }
-@media screen and (min-width: 1200px) and (min-device-width: 768px) {
-  #panels-dnd-main .pearson #wb-main {width: 900px; float: right;}
-  #panels-dnd-main .pearson {width: 1200px;}
-}
-.region-pearson-second .panel-pane { margin-bottom: 10px; }

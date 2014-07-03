@@ -17,37 +17,31 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 <?php print $panel_prefix; ?>
 <div class="panel-display dallaire clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['dallaire_top']): ?>
-  <div class="region-dallaire-top span-8">
+  <div class="region-dallaire-top">
     <div class="region-inner clearfix">
       <?php print $content['dallaire_top']; ?>
     </div>
   </div>
-  <div class="clear"></div>
   <?php endif; ?>
-  <div id="wb-main" role="main">
-    <div id="wb-main-in">
+  <div class="row" role="main">
       <?php if ($content['dallaire_second']): ?>
-      <div class="region-dallaire-first span-4">
+      <div class="region-dallaire-first col-md-5 col-md-push-3">
       <?php else: ?>
-      <div class="region-dallaire-first span-6">
+      <div class="region-dallaire-first col-md-9 col-md-push-3">
       <?php endif; ?>
         <div class="region-inner clearfix">
           <?php print $content['dallaire_first']; ?>
         </div>
       </div>
       <?php if ($content['dallaire_second']): ?>
-      <div class="region-dallaire-second span-2">
+      <div class="region-dallaire-second col-md-4 col-md-push-3">
         <div class="region-inner clearfix">
           <?php print $content['dallaire_second']; ?>
         </div>
       </div>
-      <div class="clear"></div>
       <?php endif; ?>
-      </div>
-    </div>
-    <div id="wb-sec">
-      <div id="wb-sec-in">
-        <div class="region-dallaire-third span-2 row-start">
+      <div class="region-dallaire-third col-md-3 col-md-pull-9 row-start">
+       
           <div class="region-inner clearfix">
             <nav role="navigation">
               <h2 id="wb-side-nav"><?php print t('Secondary Menu'); ?></h2>
@@ -57,15 +51,13 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
             </nav>
           </div>
         </div>
-      </div>
     </div>
     <?php if ($content['dallaire_bottom']): ?>
-    <div class="region-dallaire-bottom span-8">
+    <div class="region-dallaire-bottom">
       <div class="region-inner clearfix">
         <?php print $content['dallaire_bottom']; ?>
       </div>
     </div>
-    <div class="clear"></div>
     <?php endif; ?>
   </div>
 </div>
