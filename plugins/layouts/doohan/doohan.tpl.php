@@ -60,7 +60,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
       <?php if ($content['doohan_fourth']): ?>
        <div class="region-doohan-third col-md-4 col-md-pull-8 row-start">
         <div class="region-inner clearfix">
-          <nav role="navigation">
+          <nav role="navigation" id="wb-sec">
             <h2 id="wb-side-nav"><?php print t('Secondary Menu'); ?></h2>
             <div class="wb-sec-def">
               <?php print $content['doohan_fourth']; ?>

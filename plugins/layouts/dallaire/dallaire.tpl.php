@@ -41,9 +41,9 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
       </div>
       <?php endif; ?>
       <div class="region-dallaire-third col-md-3 col-md-pull-9 row-start">
-       
+
           <div class="region-inner clearfix">
-            <nav role="navigation">
+            <nav role="navigation" id="wb-sec">
               <h2 id="wb-side-nav"><?php print t('Secondary Menu'); ?></h2>
               <div class="wb-sec-def">
                 <?php print $content['dallaire_third']; ?>
