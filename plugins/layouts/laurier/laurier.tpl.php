@@ -14,6 +14,7 @@
 $panel_prefix = isset($panel_prefix) ? $panel_prefix : '';
 $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
+<div class="container">
 <?php print $panel_prefix; ?>
 <div class="panel-display laurier clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['laurier_top']): ?>
@@ -34,3 +35,4 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
   <?php endif; ?>
 </div>
 <?php print $panel_suffix; ?>
+</div>
