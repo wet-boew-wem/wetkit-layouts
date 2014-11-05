@@ -22,12 +22,11 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
     <?php print $content['laurier_top']; ?>
   </div>
   <?php endif; ?>
-      <?php if ($content['laurier_content']): ?>
-      <div class="region-laurier-first">
-        <?php print $content['laurier_content']; ?>
-      </div>
-        <?php endif; ?>
-
+  <?php if ($content['laurier_content']): ?>
+  <div class="region-laurier-first">
+    <?php print $content['laurier_content']; ?>
+  </div>
+  <?php endif; ?>
   <?php if ($content['laurier_bottom']): ?>
   <div class="region-laurier-bottom ">
       <?php print $content['laurier_bottom']; ?>
