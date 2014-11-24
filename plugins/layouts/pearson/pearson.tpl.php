@@ -23,17 +23,15 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
     </div>
   </div>
   <?php endif; ?>
-
     <div class="container">
       <div class="row">
-        <main role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">
+        <div role="main" property="mainContentOfPage" class="col-md-9 col-md-push-3">
           <div class="region-pearson-first">
             <div class="region-inner clearfix">
               <?php print $content['pearson_first']; ?>
             </div>
           </div>
-        </main>
-
+        </div>
         <div class="region-pearson-second">
           <nav role="navigation" id="wb-sec" typeof="SiteNavigationElement" class="col-md-3 col-md-pull-9 visible-md visible-lg">
               <h2 id="wb-side-nav"><?php print t('Section menu'); ?></h2>
@@ -51,7 +49,6 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
         </div>
       </div>
     </div>
-
   <?php if ($content['pearson_bottom']): ?>
   <div class="region-pearson-bottom">
     <div class="region-inner clearfix">
