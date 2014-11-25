@@ -43,30 +43,29 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
       </div>
       <div class="clear"></div>
       <?php endif; ?>
-      </div>
     </div>
-    <div id="wb-sec">
-      <div id="wb-sec-in">
-        <div class="region-dallaire-third span-2 row-start">
-          <div class="region-inner clearfix">
-            <nav role="navigation">
-              <h2 id="wb-side-nav"><?php print t('Secondary Menu'); ?></h2>
-              <div class="wb-sec-def">
-                <?php print $content['dallaire_third']; ?>
-              </div>
-            </nav>
-          </div>
+  </div>
+  <div id="wb-sec">
+    <div id="wb-sec-in">
+      <div class="region-dallaire-third span-2 row-start">
+        <div class="region-inner clearfix">
+          <nav role="navigation">
+            <h2 id="wb-side-nav"><?php print t('Secondary Menu'); ?></h2>
+            <div class="wb-sec-def">
+              <?php print $content['dallaire_third']; ?>
+            </div>
+          </nav>
         </div>
       </div>
     </div>
-    <?php if ($content['dallaire_bottom']): ?>
-    <div class="region-dallaire-bottom span-8">
-      <div class="region-inner clearfix">
-        <?php print $content['dallaire_bottom']; ?>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <?php endif; ?>
   </div>
+  <?php if ($content['dallaire_bottom']): ?>
+  <div class="region-dallaire-bottom span-8">
+    <div class="region-inner clearfix">
+      <?php print $content['dallaire_bottom']; ?>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <?php endif; ?>
 </div>
 <?php print $panel_suffix; ?>
