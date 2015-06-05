@@ -23,29 +23,31 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
     </div>
   </div>
   <?php endif; ?>
-  <div class="row">
-    <div class="region-polley-top-banner col-md-8">
-      <div class="region-inner clearfix">
-        <?php print $content['polley_top_banner']; ?>
+  <div class="container">
+    <div class="row">
+      <div class="region-polley-top-banner col-md-12">
+        <div class="region-inner clearfix">
+          <?php print $content['polley_top_banner']; ?>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="region-polley-spotlight col-md-6">
-      <div class="region-inner clearfix">
-        <?php print $content['polley_spotlight']; ?>
+    <div class="row">
+      <div class="region-polley-spotlight col-md-9">
+        <div class="region-inner clearfix">
+          <?php print $content['polley_spotlight']; ?>
+        </div>
+      </div>
+      <div class="region-polley-content-listings col-md-3">
+        <div class="region-inner clearfix">
+          <?php print $content['polley_content_listings']; ?>
+        </div>
       </div>
     </div>
-    <div class="region-polley-content-listings col-md-2">
-      <div class="region-inner clearfix">
-        <?php print $content['polley_content_listings']; ?>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="region-polley-bottom-banner col-md-8">
-      <div class="region-inner clearfix">
-        <?php print $content['polley_bottom_banner']; ?>
+    <div class="row">
+      <div class="region-polley-bottom-banner col-md-12">
+        <div class="region-inner clearfix">
+          <?php print $content['polley_bottom_banner']; ?>
+        </div>
       </div>
     </div>
   </div>

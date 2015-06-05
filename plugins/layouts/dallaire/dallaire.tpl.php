@@ -23,9 +23,10 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
     </div>
   </div>
   <?php endif; ?>
-  <div class="row" role="main">
+  <div class="container">
+    <div class="row" role="main">
       <?php if ($content['dallaire_second']): ?>
-      <div class="region-dallaire-first col-md-5 col-md-push-3">
+      <div class="region-dallaire-first col-md-6 col-md-push-3">
       <?php else: ?>
       <div class="region-dallaire-first col-md-9 col-md-push-3">
       <?php endif; ?>
@@ -34,24 +35,24 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
         </div>
       </div>
       <?php if ($content['dallaire_second']): ?>
-      <div class="region-dallaire-second col-md-4 col-md-push-3">
+      <div class="region-dallaire-second col-md-3 col-md-push-3">
         <div class="region-inner clearfix">
           <?php print $content['dallaire_second']; ?>
         </div>
       </div>
       <?php endif; ?>
       <div class="region-dallaire-third col-md-3 col-md-pull-9 row-start">
-
-          <div class="region-inner clearfix">
-            <nav role="navigation" id="wb-sec">
-              <h2 id="wb-side-nav"><?php print t('Section menu'); ?></h2>
-              <div class="wb-sec-def">
-                <?php print $content['dallaire_third']; ?>
-              </div>
-            </nav>
-          </div>
+        <div class="region-inner clearfix">
+          <nav role="navigation" id="wb-sec">
+            <h2 id="wb-side-nav"><?php print t('Section menu'); ?></h2>
+            <div class="wb-sec-def">
+              <?php print $content['dallaire_third']; ?>
+            </div>
+          </nav>
         </div>
+      </div>
     </div>
+  </div>
     <?php if ($content['dallaire_bottom']): ?>
     <div class="region-dallaire-bottom">
       <div class="region-inner clearfix">
@@ -59,6 +60,5 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
       </div>
     </div>
     <?php endif; ?>
-  </div>
 </div>
 <?php print $panel_suffix; ?>
