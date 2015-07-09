@@ -15,7 +15,7 @@ $panel_prefix = isset($panel_prefix) ? $panel_prefix : '';
 $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
 <?php print $panel_prefix; ?>
-<div class="panel-display mackenzie clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
+<div class="container panel-display mackenzie clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
       <?php if ($content['mackenzie_header']): ?>
       <div class="region-mackenzie-header ">
         <div class="region-inner clearfix">
@@ -25,13 +25,13 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
       <?php endif; ?>
       <div class="row">
         <?php if ($content['mackenzie_header']): ?>
-      <div class="col-md-3 col-md-push-8 ">
+      <div class="col-md-4 col-md-push-8 ">
         <div class="region-inner clearfix">
           <?php print $content['mackenzie_sidebar_first']; ?>
         </div>
       </div>
       <?php endif; ?>
-      <div class="col-md-8 col-md-pull-3 margin-top-none margin-bottom-medium">
+      <div class="col-md-8 col-md-pull-4 margin-top-none margin-bottom-medium">
         <?php if ($content['mackenzie_banner_top']): ?>
         <div class="margin-top-none margin-bottom-medium">
           <div class="region-inner clearfix">
