@@ -15,39 +15,38 @@ $panel_prefix = isset($panel_prefix) ? $panel_prefix : '';
 $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
 <?php print $panel_prefix; ?>
-<div class="panel-display penfield clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
+<div class="container panel-display penfield clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['penfield_top']): ?>
-  <div class="region-penfield-top span-8">
+  <div class="region-penfield-top col-md-12">
     <div class="region-inner clearfix">
       <?php print $content['penfield_top']; ?>
     </div>
   </div>
-  <div class="clear"></div>
   <?php endif; ?>
-  <div id="wb-main" role="main">
+  <div id="wb-main" role="main" class="col-md-8">
     <div id="wb-main-in">
-      <div class="region-penfield-first span-4">
-        <div class="region-inner clearfix">
-          <?php print $content['penfield_first']; ?>
+      <div class="row">
+        <div class="region-penfield-first col-md-4">
+          <div class="region-inner clearfix">
+            <?php print $content['penfield_first']; ?>
+          </div>
+        </div>
+        <div class="region-penfield-second col-md-2">
+          <div class="region-inner clearfix">
+            <?php print $content['penfield_second']; ?>
+          </div>
+        </div>
+        <div class="region-penfield-content-footer col-md-6">
+          <div class="region-inner clearfix">
+            <?php print $content['penfield_content_footer']; ?>
+          </div>
         </div>
       </div>
-      <div class="region-penfield-second span-2">
-        <div class="region-inner clearfix">
-          <?php print $content['penfield_second']; ?>
-        </div>
-      </div>
-      <div class="clear"></div>
-      <div class="region-penfield-content-footer span-6">
-        <div class="region-inner clearfix">
-          <?php print $content['penfield_content_footer']; ?>
-        </div>
-      </div>
-      <div class="clear"></div>
     </div>
   </div>
   <div id="wb-sec">
     <div id="wb-sec-in">
-      <div class="region-penfield-third span-2 row-start">
+      <div class="region-penfield-third col-md-4">
         <div class="region-inner clearfix">
           <nav role="navigation" id="wb-sec">
             <h2 id="wb-side-nav"><?php print t('Section menu'); ?></h2>
@@ -60,12 +59,11 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
     </div>
   </div>
   <?php if ($content['penfield_bottom']): ?>
-  <div class="region-penfield-bottom span-8">
+  <div class="region-penfield-bottom col-md-12">
     <div class="region-inner clearfix">
       <?php print $content['penfield_bottom']; ?>
     </div>
   </div>
-  <div class="clear"></div>
   <?php endif; ?>
 </div>
 <?php print $panel_suffix; ?>

@@ -15,7 +15,7 @@ $panel_prefix = isset($panel_prefix) ? $panel_prefix : '';
 $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
 <?php print $panel_prefix; ?>
-<div class="panel-display hadfield clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
+<div class="container panel-display hadfield clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['hadfield_top']): ?>
   <div class="region-hadfield-top ">
     <div class="region-inner clearfix">
@@ -38,8 +38,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
         </div>
       </div>
       <?php endif; ?>
-      </div>
-
+    </div>
   <?php if ($content['hadfield_bottom']): ?>
   <div class="region-hadfield-bottom ">
     <div class="region-inner clearfix">

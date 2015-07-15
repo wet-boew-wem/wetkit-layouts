@@ -15,38 +15,36 @@ $panel_prefix = isset($panel_prefix) ? $panel_prefix : '';
 $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
 <?php print $panel_prefix; ?>
-<div class="panel-display greene clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
-
-      <?php if ($content['greene_top']): ?>
-      <div class="region-greene-top ">
-        <div class="region-inner clearfix">
-          <?php print $content['greene_top']; ?>
-        </div>
+<div class="container panel-display greene clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
+  <?php if ($content['greene_top']): ?>
+  <div class="region-greene-top ">
+    <div class="region-inner clearfix">
+      <?php print $content['greene_top']; ?>
+    </div>
+  </div>
+  <?php endif; ?>
+  <div class="row">
+    <?php if ($content['greene_first']): ?>
+    <div class="region-greene-first col-md-5">
+      <div class="region-inner clearfix">
+        <?php print $content['greene_first']; ?>
       </div>
-      <?php endif; ?>
-      <div class="row">
-        <?php if ($content['greene_first']): ?>
-        <div class="region-greene-first col-md-5">
-          <div class="region-inner clearfix">
-            <?php print $content['greene_first']; ?>
-          </div>
-        </div>
-        <?php endif; ?>
-        <?php if ($content['greene_second']): ?>
-        <div class="region-greene-second col-md-7">
-          <div class="region-inner clearfix">
-            <?php print $content['greene_second']; ?>
-          </div>
-        </div>
-        <?php endif; ?>
-        </div>
-      <?php if ($content['greene_bottom']): ?>
-      <div class="region-greene-bottom ">
-        <div class="region-inner clearfix">
-          <?php print $content['greene_bottom']; ?>
-        </div>
+    </div>
+    <?php endif; ?>
+    <?php if ($content['greene_second']): ?>
+    <div class="region-greene-second col-md-7">
+      <div class="region-inner clearfix">
+        <?php print $content['greene_second']; ?>
       </div>
-      <?php endif; ?>
- 
+    </div>
+    <?php endif; ?>
+    </div>
+  <?php if ($content['greene_bottom']): ?>
+  <div class="region-greene-bottom ">
+    <div class="region-inner clearfix">
+      <?php print $content['greene_bottom']; ?>
+    </div>
+  </div>
+  <?php endif; ?>
 </div>
 <?php print $panel_suffix; ?>
