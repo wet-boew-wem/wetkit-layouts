@@ -17,18 +17,24 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 <?php print $panel_prefix; ?>
 <div class="container panel-display laurier clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['laurier_top']): ?>
-  <div class="col-md-12 region-laurier-top ">
-    <?php print $content['laurier_top']; ?>
+  <div class="row">
+    <div class="col-md-12 region-laurier-top ">
+      <?php print $content['laurier_top']; ?>
+    </div>
   </div>
   <?php endif; ?>
   <?php if ($content['laurier_content']): ?>
-  <div class="col-md-12 region-laurier-first">
-    <?php print $content['laurier_content']; ?>
+  <div class="row">
+    <div class="col-md-12 region-laurier-first">
+      <?php print $content['laurier_content']; ?>
+    </div>
   </div>
   <?php endif; ?>
   <?php if ($content['laurier_bottom']): ?>
-  <div class="col-md-12 region-laurier-bottom ">
-    <?php print $content['laurier_bottom']; ?>
+  <div class="row">
+    <div class="col-md-12 region-laurier-bottom ">
+      <?php print $content['laurier_bottom']; ?>
+    </div>
   </div>
   <?php endif; ?>
 </div>
