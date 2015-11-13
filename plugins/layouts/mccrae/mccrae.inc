@@ -15,7 +15,7 @@ function wetkit_layouts_mccrae_panels_layouts() {
     'category' => t('Layouts'),
     'icon' => 'mccrae.png',
     'admin css' => 'mccrae.admin.css',
-    'css' => 'mcrae.css',
+    'css' => 'mccrae.css',
     'theme' => 'mccrae',
     'theme arguments' => array('id', 'content'),
     'regions' => array(
