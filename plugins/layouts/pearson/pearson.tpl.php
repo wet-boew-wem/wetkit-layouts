@@ -50,9 +50,11 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
         </div>
       </div>
   <?php if ($content['pearson_bottom']): ?>
-  <div class="region-pearson-bottom col-md-12">
-    <div class="region-inner clearfix">
-      <?php print $content['pearson_bottom']; ?>
+  <div class="row">
+    <div class="region-pearson-bottom col-md-12">
+      <div class="region-inner clearfix">
+        <?php print $content['pearson_bottom']; ?>
+      </div>
     </div>
   </div>
   <?php endif; ?>
