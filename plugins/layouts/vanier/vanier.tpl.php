@@ -15,7 +15,7 @@ $panel_prefix = isset($panel_prefix) ? $panel_prefix : '';
 $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
 <?php print $panel_prefix; ?>
-<div class="container">
+<div class="<?php print $container_class; ?>">
   <div class="panel-display vanier clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
     <?php if ($content['vanier_top']): ?>
     <div class="region-vanier-top">
@@ -46,7 +46,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
       </div>
       <?php endif; ?>
     </div>
-    <div class="row dd">
+    <div class="row">
       <?php if ($content['vanier_section_1']): ?>
       <div class="region-vanier-section-1 col-md-3">
         <?php print $content['vanier_section_1']; ?>

@@ -42,6 +42,8 @@ function wetkit_layouts_berton_panels_layouts() {
  * Preprocess variables for berton.tpl.php.
  */
 function template_preprocess_berton(&$vars) {
+  $container = theme_get_setting('bootstrap_fluid_container');
+  $vars['container_class'] = !empty($container) ? 'container-fluid' : 'container';
   $vars['panel_prefix'] = '';
   $vars['panel_suffix'] = '';
 }

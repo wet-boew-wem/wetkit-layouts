@@ -16,7 +16,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
 <?php print $panel_prefix; ?>
 <div class="panel-display secord clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
-    <div class="container">
+    <div class="<?php print $container_class; ?>">
       <div class="row">
         <?php if ($content['secord_top_left']): ?>
         <div class="region-secord-top-left col-md-8 ">

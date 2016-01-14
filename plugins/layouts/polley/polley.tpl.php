@@ -15,7 +15,7 @@ $panel_prefix = isset($panel_prefix) ? $panel_prefix : '';
 $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
 <?php print $panel_prefix; ?>
-<div class="container panel-display polley clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
+<div class="<?php print $container_class; ?> panel-display polley clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['polley_top']): ?>
   <div class="region-polley-top">
     <div class="region-inner clearfix">
@@ -23,7 +23,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
     </div>
   </div>
   <?php endif; ?>
-  <div class="container">
+  <div class="<?php print $container_class; ?>">
     <div class="row">
       <div class="region-polley-top-banner col-md-12">
         <div class="region-inner clearfix">

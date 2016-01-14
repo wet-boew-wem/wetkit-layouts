@@ -9,7 +9,7 @@
  * panel of the layout. This layout supports the following sections:
  */
 ?>
-<div class="container panel-display mccrae clearfix <?php if (!empty($classes)) { print $classes; } ?><?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
+<div class="<?php print $container_class; ?> panel-display mccrae clearfix <?php if (!empty($classes)) { print $classes; } ?><?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
   <div class="row">
     <div class="col-md-4 sidebar panel-panel">
       <div class="panel-panel-inner">

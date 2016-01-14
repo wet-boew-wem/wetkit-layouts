@@ -40,6 +40,8 @@ function wetkit_layouts_payette_panels_layouts() {
  * Preprocess variables for payette.tpl.php.
  */
 function template_preprocess_payette(&$vars) {
+  $container = theme_get_setting('bootstrap_fluid_container');
+  $vars['container_class'] = !empty($container) ? 'container-fluid' : 'container';
   $vars['panel_prefix'] = '';
   $vars['panel_suffix'] = '';
 }

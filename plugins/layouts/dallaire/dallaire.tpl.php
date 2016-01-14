@@ -23,7 +23,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
     </div>
   </div>
   <?php endif; ?>
-  <div class="container">
+  <div class="<?php print $container_class; ?>">
     <div class="row" role="main">
       <?php if ($content['dallaire_second']): ?>
       <div class="region-dallaire-first col-md-6 col-md-push-3">

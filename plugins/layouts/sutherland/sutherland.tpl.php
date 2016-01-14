@@ -18,7 +18,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 <div class="panel-display sutherland clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['sutherland_top']): ?>
   <aside class="prm-flpr">
-    <div class="container">
+    <div class="<?php print $container_class; ?>">
       <div class="row">
         <div class="region-sutherland-top">
           <div class="region-inner clearfix">
@@ -30,7 +30,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
   </aside>
   <?php endif; ?>
   <?php if ($content['sutherland_top_inner']): ?>
-  <div class="container">
+  <div class="<?php print $container_class; ?>">
     <div class="row">
       <div class="region-sutherland-top-inner col-md-12">
         <div class="region-inner clearfix">
@@ -40,7 +40,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
     </div>
   </div>
   <?php endif; ?>
-  <div class="container">
+  <div class="<?php print $container_class; ?>">
     <div id="gcwu-content">
       <?php if ($content['sutherland_first']): ?>
       <div class="region-sutherland-first col-md-4">
@@ -66,7 +66,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
     </div>
   </div>
   <?php if ($content['sutherland_bottom_inner']): ?>
-  <div class="container">
+  <div class="<?php print $container_class; ?>">
     <div class="row">
       <div class="region-sutherland-bottom-inner col-md-12">
         <div class="region-inner clearfix">
@@ -78,7 +78,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
   <?php endif; ?>
   <?php if ($content['sutherland_bottom']): ?>
   <aside class="features">
-    <div class="container">
+    <div class="<?php print $container_class; ?>">
       <div class="row">
         <div class="region-sutherland-bottom col-md-12">
           <div class="region-inner clearfix">

@@ -48,6 +48,8 @@ function wetkit_layouts_vanier_panels_layouts() {
  * Preprocess variables for vanier.tpl.php.
  */
 function template_preprocess_vanier(&$vars) {
+  $container = theme_get_setting('bootstrap_fluid_container');
+  $vars['container_class'] = !empty($container) ? 'container-fluid' : 'container';
   $vars['panel_prefix'] = '';
   $vars['panel_suffix'] = '';
 }

@@ -9,7 +9,6 @@
  * Implements hook_panels_layouts().
  */
 function wetkit_layouts_mccrae_panels_layouts() {
-
   $items['mccrae'] = array(
     'title' => t('McCrae'),
     'category' => t('Layouts'),
@@ -37,6 +36,8 @@ function wetkit_layouts_mccrae_panels_layouts() {
  * Preprocess variables for mccrae.tpl.php.
  */
 function template_preprocess_mccrae(&$vars) {
+  $container = theme_get_setting('bootstrap_fluid_container');
+  $vars['container_class'] = !empty($container) ? 'container-fluid' : 'container';
   $vars['panel_prefix'] = '';
   $vars['panel_suffix'] = '';
 }

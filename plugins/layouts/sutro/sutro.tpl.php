@@ -11,7 +11,7 @@
 ?>
 
 <div class="panel-display sutro clearfix <?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
-  <div class="container">
+  <div class="<?php print $container_class; ?>">
     <div class="row">
       <div class="sutro-container sutro-header clearfix panel-panel col-md-12">
         <div class="sutro-container-inner sutro-header-inner panel-panel-inner">

@@ -11,7 +11,7 @@
 ?>
 
 <div class="panel-display burr-flipped clearfix <?php if (!empty($class)) { print $class; } ?>" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
-<div class="container">
+<div class="<?php print $container_class; ?>">
 
     <div class="burr-flipped-container burr-flipped-content-container clearfix">
       <div class="burr-flipped-content burr-flipped-content-region panel-panel">

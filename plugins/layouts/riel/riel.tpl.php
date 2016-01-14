@@ -14,7 +14,7 @@
 $panel_prefix = isset($panel_prefix) ? $panel_prefix : '';
 $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
 ?>
-<div class="container">
+<div class="<?php print $container_class; ?>">
 <?php print $panel_prefix; ?>
 <div class="panel-display riel clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['riel_top']): ?>

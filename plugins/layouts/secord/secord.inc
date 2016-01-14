@@ -40,6 +40,8 @@ function wetkit_layouts_secord_panels_layouts() {
  * Preprocess variables for secord.tpl.php.
  */
 function template_preprocess_secord(&$vars) {
+  $container = theme_get_setting('bootstrap_fluid_container');
+  $vars['container_class'] = !empty($container) ? 'container-fluid' : 'container';
   $vars['panel_prefix'] = '';
   $vars['panel_suffix'] = '';
 }
