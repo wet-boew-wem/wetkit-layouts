@@ -26,6 +26,7 @@ function wetkit_layouts_dallaire_panels_layouts() {
     ),
     'bodyid' => 'wb-body-sec',
     'type' => 'three',
+    'main' => TRUE,
     'options' => array(),
     'styles' => array(),
   );

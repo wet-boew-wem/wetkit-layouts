@@ -26,6 +26,7 @@ function wetkit_layouts_pearson_panels_layouts() {
     ),
     'bodyid' => 'wb-body-sec',
     'type' => 'two',
+    'main' => TRUE,
     'options' => array(),
     'styles' => array(),
   );

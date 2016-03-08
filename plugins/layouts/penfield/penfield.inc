@@ -27,6 +27,7 @@ function wetkit_layouts_penfield_panels_layouts() {
     ),
     'bodyid' => 'wb-body-sec',
     'type' => 'three',
+    'main' => TRUE,
     'options' => array(),
     'styles' => array(),
   );
