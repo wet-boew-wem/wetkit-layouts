@@ -13,6 +13,8 @@
  */
 $panel_prefix = isset($panel_prefix) ? $panel_prefix : '';
 $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
+$wb_eqht1 =  (isset($vanier_content_search) || isset($vanier_content_datasets)) ? 'wb-eqht' : '';
+$wb_eqht2 =  (isset($vanier_spotlight_1) || isset($vanier_spotlight_2) || isset($vanier_spotlight_3)) ? 'wb-eqht' : '';
 ?>
 <?php print $panel_prefix; ?>
 <div class="<?php print $container_class; ?>">
@@ -34,7 +36,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
       </div>
       <?php endif; ?>
     </div>
-    <div class="row wb-eqht">
+    <div class="row <?php print $wb_eqht1; ?>">
       <?php if ($content['vanier_content_search']): ?>
       <div class="region-vanier-content-search col-md-8">
         <?php print $content['vanier_content_search']; ?>
@@ -68,7 +70,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
       </div>
       <?php endif; ?>
     </div>
-    <div class="row wb-eqht priorities">
+    <div class="row <?php print $wb_eqht1; ?> priorities">
       <?php if ($content['vanier_spotlight_1']): ?>
       <div class="region-vanier-spotlight-1 col-md-4">
         <?php print $content['vanier_spotlight_1']; ?>
