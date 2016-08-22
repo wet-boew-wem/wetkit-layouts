@@ -34,7 +34,7 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
           </div>
         </div>
         <div class="region-pearson-second">
-          <nav role="navigation" id="wb-sec" typeof="SiteNavigationElement" class="col-md-3 col-md-pull-9 visible-md visible-lg">
+          <nav role="navigation" id="wb-sec" typeof="SiteNavigationElement" class="col-md-3 col-md-pull-9">
               <h2 id="wb-side-nav"><?php print t('Section menu'); ?></h2>
               <?php if ($content['pearson_second']): ?>
                 <div class="wb-sec-def">
