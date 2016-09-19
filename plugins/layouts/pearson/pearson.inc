@@ -39,7 +39,9 @@ function wetkit_layouts_pearson_panels_layouts() {
  */
 function template_preprocess_pearson(&$vars) {
   $container = theme_get_setting('bootstrap_fluid_container');
+  $wxt_active = variable_get('wetkit_wetboew_theme', 'theme-wet-boew');
   $vars['container_class'] = !empty($container) ? 'container-fluid' : 'container';
+  $vars['sidebar_class'] = ($wxt_active != 'theme-gcweb') ? 'visible-md visible-lg' : '';
   $vars['panel_prefix'] = '';
   $vars['panel_suffix'] = '';
 }
