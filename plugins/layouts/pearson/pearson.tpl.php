@@ -34,10 +34,10 @@ $panel_suffix = isset($panel_suffix) ? $panel_suffix : '';
           </div>
         </div>
         <div class="region-pearson-second">
-          <nav role="navigation" id="wb-sec" typeof="SiteNavigationElement" class="col-md-3 col-md-pull-9 <?php print $sidebar_class; ?>">
-              <h2 id="wb-side-nav"><?php print t('Section menu'); ?></h2>
+          <nav role="navigation" typeof="SiteNavigationElement" class="col-md-3 col-md-pull-9 <?php print $sidebar_class; ?>">
+              <h2 id="wb-side-nav"></h2>
               <?php if ($content['pearson_second']): ?>
-                <div class="wb-sec-def">
+                <div id="wb-sec" class="wb-sec-def">
                   <?php print $content['pearson_second']; ?>
                 </div>
               <?php endif; ?>
